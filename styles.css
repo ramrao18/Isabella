@@ -10,12 +10,14 @@ body {
 .custom-layout {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 10px; /* Add padding for mobile */
 }
 
+/* Profile Image Styling */
 .profile-img {
     width: 100%; /* Ensure the image fits the width of its container */
     height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensures the image covers its container */
+    object-fit: contain; /* Ensures the image fits properly */
     border-radius: 10px; /* Optional: Add rounded corners for aesthetics */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
@@ -91,4 +93,56 @@ body {
 
 .submit-btn:hover {
     background-color: #0056b3;
+}
+
+
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Styles */
+.custom-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; /* Add padding for mobile */
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 100%; /* Ensure the image fits the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensures the image fits properly */
+    border-radius: 10px; /* Optional: Add rounded corners for aesthetics */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .custom-layout {
+        flex-direction: column; /* Stack the columns vertically */
+        text-align: center; /* Center the text and image on small screens */
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%; /* Make the columns take up the full width */
+        max-width: 100%; /* Allow the columns to stretch fully */
+    }
+
+    .profile-img {
+        max-width: 100%; /* Adjust image size for mobile screens */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .description {
+        font-size: 1rem; /* Slightly reduce font size for better fit */
+    }
+
+    .hire-me-btn {
+        margin-top: 10px; /* Add spacing between the button and other elements */
+    }
 }
