@@ -8,8 +8,8 @@ document.getElementById('hireMeForm').addEventListener('submit', function (event
     const message = document.getElementById('clientMessage').value;
     const developer='Husnain';
     const reply_to='pramakrishnadev@gmail.com';
-    const serviceid='service_ow5p0mc';
-    const templateid='template_qszmnhm';
+    const serviceid='service_vubycf1';
+    const templateid='template_7z6g3bn';
     // EmailJS parameters
     const templateParams = {
         client_name: name,
